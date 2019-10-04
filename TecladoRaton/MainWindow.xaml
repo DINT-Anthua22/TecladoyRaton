@@ -1,0 +1,31 @@
+﻿<Window x:Class="TecladoRaton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TecladoRaton"
+        mc:Ignorable="d"
+        Title="Teclado y Ratón" Height="450" Width="800"
+        MouseDown="ClicksColor" MouseUp="ClicksColor">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="736*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="51,111,0,0" TextWrapping="Wrap" Text="TextBox 1" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox Grid.Column="2" x:Name="Mayusculas_TextBox" HorizontalAlignment="Left" Height="24" Margin="51,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Mayusculas_TextBox_TextChanged" MouseEnter="Mayusculas_TextBox_MouseEnter" MouseLeave="Mayusculas_TextBox_MouseLeave" IsKeyboardFocusWithinChanged="Mayusculas_TextBox_IsKeyboardFocusWithinChanged"  />
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="51,201,0,0" TextWrapping="Wrap" Text="TextBox 2" VerticalAlignment="Top"/>
+        <TextBox x:Name="AyudaTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="51,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="AyudaTextBox_MouseEnter" MouseLeave="AyudaTextBox_MouseLeave" IsKeyboardFocusWithinChanged="AyudaTextBox_IsKeyboardFocusWithinChanged" KeyDown="AyudaTextBox_KeyDown" />
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="51,286,0,0" TextWrapping="Wrap" Text="TextBox 3" VerticalAlignment="Top"/>
+        <TextBox x:Name="SinVocalesTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="51,307,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" MouseLeave="SinVocalesTextBox_MouseLeave" MouseEnter="SinVocalesTextBox_MouseEnter_1" IsKeyboardFocusWithinChanged="SinVocalesTextBox_IsKeyboardFocusWithinChanged" KeyDown="SinVocalesTextBox_KeyDown" />
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="420,111,0,0" TextWrapping="Wrap" Text="Foco" VerticalAlignment="Top" RenderTransformOrigin="0.183,1.003"/>
+        <TextBox x:Name="FocoTextBox" IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="420,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RatonSobreTextBox" IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="420,222,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="420,201,0,0" TextWrapping="Wrap" Text="Ratón sobre" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="420,307,0,0" TextWrapping="Wrap" Text="Botones" VerticalAlignment="Top"/>
+        <TextBox x:Name="BotonIzquierdoTextBox" IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="493,306,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="32" RenderTransformOrigin="-2.031,0.826"  />
+        <TextBox x:Name="BotonDerechoTextBox" IsReadOnly="True" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="544,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" RenderTransformOrigin="-2.031,0.826" />
+
+    </Grid>
+</Window>
